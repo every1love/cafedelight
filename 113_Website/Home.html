@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe Delight</title>
+    <link href='https://fonts.googleapis.com/css?family=Agbalumo' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500&family=Akshar&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            min-height: 100vh;
+            background: url('Untitled design.png') no-repeat center center;
+            background-size: 100% 100%;
+            color: white;
+        }
+        .container {
+            position: relative;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        .nav {
+            display: flex;
+            justify-content: flex-end;
+            padding: 2rem 3rem;
+            position: relative;
+            z-index: 1;
+        }
+        .nav .links {
+            display: flex;
+            gap: 32px;
+            list-style: none;
+        }
+        nav ul li {
+            margin-left: 2rem;
+        }
+        .nav .links a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+            font-family: 'Poppins', sans-serif;
+            font-size: 16px; 
+            letter-spacing: 0px;
+            text-transform: none;
+        }
+        .nav .links a:hover {
+            color: #e67e22;
+        }
+        .hero {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 50px;
+        }
+        .hero h1 {
+            font-size: 100px;
+            font-family: 'Agbalumo';
+            margin-bottom: 10px;
+        }
+        .hero button {
+            background-color: #e67e22;
+            color: white;
+            font-size: 20px;
+            padding: 10px 15px;
+            margin-left:8px;
+            margin-right: 80%;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        .hero button:hover {
+            background-color: #d35400;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <div class="links">
+                <a href="#">Home</a>
+                <a href="aboutpage.html">About</a>
+                <a href="service.html">Services</a>
+                <a href="contactpage.html">Contact</a>
+                <a href="menu.html">Menu</a>
+            </div>
+        </div>
+        <div class="hero">
+            <h1>Welcome to<br>Cafe Delight.</h1>
+            <button>Order Now!</button>
+        </div>
+    </div>
+</body>
+</html>
