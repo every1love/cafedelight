@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Café Delight</title>
+    <link href='https://fonts.googleapis.com/css?family=Akshar' rel='stylesheet'>
+    <style>
+        /* Reset and base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: black;
+            background-color: #f9f8f3;
+        }
+
+        /* Hero section */
+        .hero {
+            background-image: url("about.png");
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            position: relative;
+            color: white;
+        }
+
+        .hero::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+
+        nav {
+            display: flex;
+            justify-content: flex-end; /* Moves nav links to the right */
+            padding: 2rem 3rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 5px;
+        }
+
+        nav ul li {
+            margin-left: 2rem;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+            font-family: 'Poppins', sans-serif;
+            font-size: 16px; 
+            letter-spacing: 0px;
+            text-transform: none;
+        }
+
+        nav ul li a:hover,
+        nav ul li a.active {
+            color: #e67e22;
+        }
+
+        .hero h1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 7rem;
+            font-family: 'Akshar';
+            text-align: center;
+            letter-spacing: 2px;
+            z-index: 2;
+        }
+
+        /* Main content */
+        .striped-background {
+            background-image: white;
+            padding: 4rem 2rem;
+        }
+
+        section {
+            max-width: 1200px;
+            margin: 0 auto 4rem;
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .image-container {
+            flex: 1;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 1rem;
+        }
+
+        .content {
+            flex: 1;
+        }
+
+        h2 {
+            font-family: "Playfair Display", serif;
+            font-size: 4rem;
+            color: #4a3419;
+            margin-bottom: 1rem;
+            text-align: right;
+        }
+
+        h3 {
+            font-family: "Playfair Display", serif;
+            font-size: 4rem;
+            color: #4a3419;
+            margin-bottom: 1rem;
+            text-align: left;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #4a3419;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            section {
+                flex-direction: column;
+            }
+
+            .our-coffee .content,
+            .our-pastries .content {
+                order: -1;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <header class="hero">
+        <nav>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="aboutpage.html" class="active">About</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="contactpage.html">Contact</a></li>
+                <li><a href="menu.html">Menu</a></li>
+            </ul>
+        </nav>
+        <h1>ABOUT US</h1>
+    </header>
+
+    <main class="striped-background">
+        <section class="welcome">
+            <div class="image-container">
+                <img src="4.webp" alt="Café Delight Interior">
+            </div>
+            <div class="content">
+                <h2>Welcome to<br>Café Delight.</h2>
+                <b><p>Where every sip brings comfort and joy! We're passionate about crafting the perfect cup of coffee and serving delicious treats in a cozy, inviting space. Whether you're here for your morning boost, a relaxing break, or a sweet indulgence, we're dedicated to making your visit a delightful experience.</p></b>
+                <b><p>Come in, take a seat, and savor the moment—one cup at a time.</p></b>
+            </div>
+        </section>
+
+        <section class="our-coffee">
+            <div class="content">
+                <h3>Our Coffee.</h3>
+                <b><p>At Café Delight, we take pride in every cup we serve. Sourced from the finest beans, our coffee is carefully brewed to bring out rich flavors and smooth aromas. Whether you prefer a bold espresso, a creamy latte, or a refreshing iced brew, each sip is crafted to perfection. Enjoy the warmth, taste the quality, and let our coffee brighten your day!</p></b>
+            </div>
+            <div class="image-container">
+                <img src="5.webp" alt="Coffee cup with beans">
+            </div>
+        </section>
+
+        <section class="our-ice-coffee">
+            <div class="image-container">
+                <img src="6.webp" alt="Iced coffee">
+            </div>
+            <div class="content">
+                <h2>Our Ice Coffee.</h2>
+                <b><p>Beat the heat with Café Delight's signature iced coffee! Made from premium beans, expertly brewed and chilled to perfection, our iced coffee delivers a smooth, bold flavor with every sip. Whether you love it black, creamy, or flavored, it's the perfect pick-me-up for any time of the day.</p></b>
+            </div>
+        </section>
+
+        <section class="our-pastries">
+            <div class="content">
+                <h3>Our Pastries.</h3>
+                <b><p>At Café Delight, our pastries are baked fresh daily to bring you the perfect balance of flakiness, sweetness, and warmth. From buttery croissants to rich, decadent cakes and flavorful muffins, each bite is made to pair beautifully with your favorite coffee.</p></b>
+            </div>
+            <div class="image-container">
+                <img src="7.webp" alt="Pastries and coffee">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        Copyright © 2025 Café Delight. All Rights Reserved.
+    </footer>
+</body>
+</html>

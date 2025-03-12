@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Bright Future Academy</title>
+    <link href='https://fonts.googleapis.com/css?family=Agbalumo' rel='stylesheet'>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        body {
+            background-color: #f5f5f5;
+        }
+        header {
+            position: fixed;
+            top: 10px;
+            right: 20px;
+            width: auto;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 5px 20px;
+            color: white;
+            z-index: 1000;
+        }
+        nav {
+            background:#E52020;
+    padding: 15px 0; /* Adjust padding for better spacing */
+    width: 100%; /* Ensure it covers full width */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    align-items: left;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: right; /* Centers nav items */
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+            color: white;
+            font-size: 14px;
+            transition: color 0.3s;
+            font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #8E1616;
+}
+        .contact {
+            margin: 100px auto;
+            width: 50%;
+            text-align: center;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .contact h1 {
+            font-size: 40px;
+            font-family: 'Agbalumo';
+            color: #D84040;
+        }
+        .contact p {
+            font-size: 18px;
+            margin-top: 10px;
+            color: #333;
+        }
+        form {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        input, textarea {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        textarea {
+            height: 100px;
+            resize: none;
+        }
+        .submit-btn {
+            background: #DD934E;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .submit-btn:hover {
+            background: #c47a3b;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="contact">
+        <h1>Contact Us</h1>
+        <p>Have questions? Fill out the form below and we'll get back to you!</p>
+        
+        <form action="#" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+    </div>
+</body>
+</html>
